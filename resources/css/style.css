@@ -1,0 +1,303 @@
+*{
+  /*border: 1px black solid;*/
+}
+html{
+  font-size: 18px;
+  line-height: 1.4;
+    font-family: "Helvetica"
+}
+body{
+  margin: 0 auto;
+}
+.container{
+  width: 960px;
+  margin: 0 auto;
+}
+
+/* Header Start */
+
+.header{
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: space-between;
+  background-color: cadetblue;
+  font-family: Helvetica;
+  font-size: 1rem;
+  font-weight: bold;
+  color: white;
+  position: absolute;
+  top: 1rem;
+  width: inherit;
+  z-index: 3;
+}
+.header_title{
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: space-between;
+}
+.header_title img{
+  margin: 1rem 0 1rem 2rem;
+  height: 1.5rem;
+}
+.header_title span{
+  margin-left: 1rem;
+}
+.header_nav span{
+  margin: 1rem;
+}
+.header_small{
+    display: none;
+}
+
+/* Banner Start */
+
+.banner{
+  background-image: url(https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-5/tortoiseshell-optics/resources/images/glasses-bg.png);
+  background-size: cover;
+  background-position: left;
+  width: 100%;
+  height: 30rem;
+  margin: 0 auto;
+  padding: 0;
+}
+.banner_txt{
+  position: absolute;
+  top: 10rem;
+  right: 2rem;
+  background-color: white;
+  padding: 1.5rem 5rem;
+}
+.banner_txt h1{
+    text-align: right;
+    font-weight: bold;
+    font-size: 2rem;
+    line-height: 1.2;
+    font-family: Helvetica;
+    padding: 0;
+    margin: 0;
+}
+
+/* Content Start */
+
+.content{
+    display: flex;
+    justify-content: center;
+    align-content: flex-start;
+    align-items: space-around;
+    height: 8rem;
+    width: auto;
+    margin-top: 3rem;
+}
+.exams{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    align-content: center;
+    padding: 0 1rem;
+    
+}
+.exams img{
+    width: 3.5rem;
+    height: auto;
+    padding: 0 3rem;
+}
+.exams h2{
+    text-align: center;
+    
+}
+.fittings{
+    padding: 0 3rem;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    align-content: space-between;
+}
+.fittings img{
+    width: 5rem;
+    height: auto;
+    
+}
+.fiitings h2{
+  text-align: center;
+}
+.delivery{
+    padding: 0 3rem;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    align-content: space-between;
+}
+.delivery img{
+    width: 5rem;
+    height: auto;
+}
+.delivery h2{
+    text-align: center;
+}
+
+    /* Info Start */
+
+.info{
+    margin-top: 3rem;
+    margin-bottom: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-items: flex-start;
+    
+}
+.philosophy{
+    width: 35%; 
+    margin-right: 2.5%
+}
+.philosophy h2{
+    background-color: cadetblue;
+    font-weight: bold;
+    font-size: 1rem;
+    font-family: "Helvetica";
+    color: white;
+    width: 10rem;
+    padding: 0.5rem 1.25rem;
+}
+.philosophy p{
+    margin-top: 1rem;
+}
+.appointments{
+    width: 35%;
+    margin-left: 2.5%
+}
+.appointments h2{
+    background-color: cadetblue;
+    font-weight: bold;
+    font-size: 1rem;
+    font-family: "Helvetica";
+    color: white;
+    width: 10rem;
+    padding: 0.5rem 1.25rem;
+}
+.appointments p{
+    margin-top: 1rem;
+}
+
+/* Footer Start */
+
+.footer{
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    padding: 4rem; 
+    background-color: azure;
+}
+.footer img{
+    height: 1.5rem;
+    margin-right: 1rem;
+    
+}
+
+/* Medium-Device Media Start */
+
+@media only screen and (max-width: 960px){
+    .container{
+        width: 100%;
+        margin: 0 auto;
+}
+    .header{
+        width: 100%;
+        top: 0;  
+    }
+    .banner{
+        height: 22rem;
+    }
+    .banner_txt{
+        padding: 0.75rem 4rem;
+    }
+    .banner_txt h1{
+        font-size: 1.33rem;
+    }
+}
+@media only screen and (max-width: 750px){
+    .container{
+        width: 100%;
+        margin: 0 auto; 
+    }
+    .header{
+        width: 100%;
+        top: 0;  
+    }
+
+    .banner{
+        height: 17rem;
+        background-position: 20%;
+    }
+    .banner_txt{
+        position: absolute;
+        top: 13rem;
+        right: auto;
+        width: 100%;
+        text-align: center;
+        
+    }
+    .banner_txt h1{
+        font-size: 1rem;
+        text-align: center;
+    }
+    .content{
+        height: auto;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        align-content: space-between;
+        align-items: center;
+    }
+    .exams,
+    .fittings,
+    .delivery{
+        padding-bottom: 1.45rem;
+        justify-content: center;
+    }
+    .exams h2,
+    .fittings h2,
+    .delivery h2{
+        padding-top: 1.45rem;
+        font-size: 0.77rem;
+        width: 
+    }
+    .info{
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    .philosophy, 
+    .appointments{
+        margin: 0 0 4rem 0;
+        width: 100%;
+        text-align: center;
+    }
+    .philosophy h2, 
+    .appointments h2{
+        width: 100%;
+        margin: 0;
+        text-align: center;
+    }
+    .header_title span{
+        display: none;
+    }
+    .header_nav{
+        display: none;
+    }
+    .header_small{
+        display: block;
+        margin-right: 2rem;
+        
+    }
+    .footer h2{
+        display: none;
+    }
+    .footer img{
+        margin: 0 auto;
+    }
+}
+
